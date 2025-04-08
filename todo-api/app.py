@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 # Base de datos simulada en memoria
 todos = {
-    "todos": ['Estudiar', 'Comer', 'Jugar UNO']
+    "todos": ['Estudiar', 'Comer', 'Jugar DOS']
 }
 
 @app.route("/", methods=["GET"])
