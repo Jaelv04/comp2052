@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Horas trabajadas y Sueldos</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Sueldo</th>
+                <th>Horas Trabajadas</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for horat in Horas_t %}
+                <tr>
+                    <td>{{horat.Nombre}}</td>
+                    <td>${{ horat.Sueldo }}</td>
+                    <td>{{ horat.horas_Trabajadas }} horas</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
