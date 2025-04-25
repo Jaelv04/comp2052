@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Error</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+    </head>
+        <body>
+            <h1>ERROR!</h1>
+            <p>{{message}}</p>
+            <a href="{{url_for('login')}}">Intentar otra vez</a>
+        </body>
+</html>
