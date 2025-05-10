@@ -1,0 +1,11 @@
+
+PUT http://localhost:5000/eventos/1
+Content-Type: application/json
+
+{
+    "nombre": "Conferencia de Tecnologia Actualizada",
+    "ubicacion": "Puerto Rico",
+    "fecha_hora": "2025-06-16T10:00:00",
+    "capacidad": 10000,
+    "descripcion": "Una conferencia sobre las últimas tendencias en tecnología actualizada"
+}

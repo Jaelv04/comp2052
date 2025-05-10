@@ -1,0 +1,10 @@
+POST http://localhost:5000/eventos
+Content-Type: application/json
+
+{
+    "nombre": "Taller de Programacion",
+    "ubicacion": "Puerto Rico",
+    "fecha_hora": "2025-06-15T09:00:00",
+    "capacidad": 50,
+    "descripcion": "Taller donde aprenderas a programar en Python"
+}
