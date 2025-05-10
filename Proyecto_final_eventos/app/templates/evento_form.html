@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block title %}{{ editar and "Edit Event" or "New Event" }}{% endblock %}
+{% block content %}
+<h2 class="mb-4">{{ editar and "Editar Evento" or "Nuevo Evento" }}</h2>
+
+<form method="POST" novalidate>
+  {{ form.hidden_tag() }}
+
+  <div class="mb-3">
+    {{ form.nombre.label(class="form-label") }}
+    {{ form.nombre(class="form-control", placeholder="Ingrese el nombre del evento") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.ubicacion.label(class="form-label") }}
+    {{ form.ubicacion(class="form-control", placeholder="Ingrese la localización del evento") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.fecha_hora.label(class="form-label") }}
+    {{ form.fecha_hora(class="form-control", placeholder="YYYY-MM-DD HH:MM:SS") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.capacidad.label(class="form-label") }}
+    {{ form.capacidad(class="form-control", placeholder="Ingrese la capacidad del evento") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.descripcion.label(class="form-label") }}
+    {{ form.descripcion(class="form-control", placeholder="Descripción del evento") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.submit(class="btn btn-primary") }}
+  </div>
+</form>
+{% endblock %}
